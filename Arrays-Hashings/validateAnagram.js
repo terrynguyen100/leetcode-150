@@ -19,6 +19,8 @@ Constraints:
 s and t consist of lowercase English letters.
 */
 
+//Aproach 1: Using Object/Hashmap
+// Time Complexity: O(3n)
 const isAnagram = (s, t) => {
   // O(1) - Constant time complexity
   if (s.length !== t.length) {
