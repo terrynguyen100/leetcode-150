@@ -47,3 +47,10 @@ const isAnagram = (s, t) => {
   }
   return true;
 };
+
+// Approach 2: using sorting
+const isAnagram = (s, t) => {
+  const sortedS = s.split('').sort().join('');
+  const sortedT = t.split('').sort().join('');
+  return sortedS === sortedT;
+};
